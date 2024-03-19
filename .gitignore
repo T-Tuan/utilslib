@@ -2,7 +2,7 @@ node_modules
 lib
 **/dist
 doc
-docs
+/docs
 out
 .vscode-test/
 *.vsix

@@ -3,7 +3,8 @@ import { globSync } from "glob";
 /** @type {import('typedoc').TypeDocOptions} */
 export default {
   name: "@utilslib",
-  readme: "README.md",
+  // readme: "README.md",
+  plugin: ["typedoc-plugin-markdown"],
   entryPoints: globSync("packages/*").map((item) => "../" + item),
   entryPointStrategy: "packages",
   hideGenerator: true,
